@@ -1,11 +1,12 @@
 # ignore objects ending with .o
 *.o
-snake
 
 # ignore temp files from the editor or the os
 *~
 *.swp
 *.DS_Store
 
-# ignore files in the build directory
-# ...
+# ignore executables
+*.exe
+*.out
+*.app
