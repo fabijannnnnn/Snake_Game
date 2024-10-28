@@ -4,7 +4,7 @@
 # ignore temp files from the editor or the os
 *~
 *.swp
-*.DS_Store
+.DS_Store
 
 # ignore executables
 *.exe
