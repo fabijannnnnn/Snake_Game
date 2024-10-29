@@ -1,5 +1,8 @@
-#include "input.h"
-#include "game.h"
+#ifndef __INPUT_CPP__
+#define __INPUT_CPP__
+
+#include "../include/input.h"
+#include "../include/game.h"
 #include <ncurses.h>
 
 void Input()
@@ -30,3 +33,5 @@ void Input()
             break;
     }
 }
+
+#endif //__INPUT_CPP__

@@ -1,4 +1,7 @@
-#include "game.h"
+#ifndef __GAME_CPP__
+#define __GAME_CPP__
+
+#include "../include/game.h"
 #include <cstdlib>
 #include <ncurses.h>
 
@@ -79,3 +82,5 @@ void Logic()
         }
     }
 }
+
+#endif //__GAME_CPP__

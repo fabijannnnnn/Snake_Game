@@ -1,7 +1,7 @@
 #include <ncurses.h>
-#include "game.h"
-#include "draw.h"
-#include "input.h"
+#include "game.cpp"
+#include "draw.cpp"
+#include "input.cpp"
 
 int main()
 {

@@ -1,5 +1,8 @@
-#include "draw.h"
-#include "game.h"
+#ifndef __DRAW_CPP__
+#define __DRAW_CPP__
+
+#include "../include/draw.h"
+#include "../include/game.h"
 #include <ncurses.h>
 
 void Draw()
@@ -48,3 +51,5 @@ void End()
     refresh();
     getch();
 }
+
+#endif // __DRAW_CPP__

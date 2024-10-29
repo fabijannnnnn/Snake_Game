@@ -1,11 +1,13 @@
-#ifndef GAME_H
-#define GAME_H
+#ifndef __GAME_H__
+#define __GAME_H__
 
 extern bool game_over;
 extern int x, y, FruitX, FruitY, score;
 extern int TailX[100], TailY[100];
 extern int nTail;
 extern const int height, width;
+
+// TODO: dat globalne premenne do classy
 enum Direction
 {
     up,

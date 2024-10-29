@@ -1,22 +1,16 @@
-CC = g++
+CC = gcc
 CFLAGS = -lncurses
+SRC_DIR = src
+TARGET = snake
+SRC = main.cpp
 
-all: snake
+all: run
 
-snake: main.o game.o draw.o input.o
-	$(CC) -o snake main.o game.o draw.o input.o $(CFLAGS)
+run: build
+	./$(TARGET)
 
-main.o: main.cpp game.h draw.h input.h
-	$(CC) -c main.cpp
+build:
+	$(CC) $(SRC_DIR)/$(SRC) -o $(TARGET) $(CFLAGS)
 
-game.o: game.cpp game.h
-	$(CC) -c game.cpp
-
-draw.o: draw.cpp draw.h game.h
-	$(CC) -c draw.cpp
-
-input.o: input.cpp input.h game.h
-	$(CC) -c input.cpp
-
-clean:
-	rm -f snake main.o game.o draw.o input.o
+clean cl:
+	rm -f snake
