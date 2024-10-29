@@ -8,5 +8,6 @@
 
 # ignore executables
 *.exe
+*.exec
 *.out
 *.app
